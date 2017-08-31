@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jadulco_maria_115.labexercise1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz 1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/quiz1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz 2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="150dp"
+        android:id="@+id/quiz2"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seatworks"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="200dp"
+        android:id="@+id/seatWorks"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lab Exercises"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="250dp"
+        android:id="@+id/labEx"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Major Exam"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="300dp"
+        android:id="@+id/majorExam"
+        />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/quiz1"
+        android:layout_alignBottom="@+id/quiz2"
+        android:layout_alignLeft="@+id/etQuiz2"
+        android:layout_alignStart="@+id/etQuiz2"
+        android:id="@+id/etQuiz1"
+        android:inputType="number"/>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/quiz2"
+        android:layout_alignBottom="@+id/quiz2"
+        android:layout_alignLeft="@+id/etseatWorks"
+        android:layout_alignStart="@+id/etseatWorks"
+        android:id="@+id/etQuiz2"
+        android:inputType="number"/>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/seatWorks"
+        android:layout_alignBottom="@+id/seatWorks"
+        android:layout_alignLeft="@+id/etLabEx"
+        android:layout_alignStart="@+id/etLabEx"
+        android:id="@+id/etseatWorks"
+        android:inputType="number"/>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/labEx"
+        android:layout_alignBottom="@+id/labEx"
+        android:layout_alignLeft="@+id/etMajorExam"
+        android:layout_alignStart="@+id/etMajorExam"
+        android:id="@+id/etLabEx"
+        android:inputType="number"/>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_alignBaseline="@+id/majorExam"
+        android:layout_alignBottom="@+id/majorExam"
+        android:layout_toRightOf="@+id/labEx"
+        android:layout_toEndOf="@+id/labEx"
+        android:id="@+id/etMajorExam"
+        android:inputType="number"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPUTE"
+        android:layout_below="@+id/etMajorExam"
+        android:layout_marginLeft="150dp"
+        android:onClick="computeForGrade"
+        android:id="@+id/btnCompute" />
+
+
+</RelativeLayout>
